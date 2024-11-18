@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Consulting Excellence</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                        url('/api/placeholder/1200/600');
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+        
+        section:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h2>Business Excellence</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Driving Success Across Industries with Proven Expertise</h1>
+            <p>From manufacturing to retail, wholesale to healthcare – we deliver tailored solutions to elevate your business.</p>
+            <a href="#contact" class="btn">Contact Us Today</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Your Trusted Partner in Business Excellence</h2>
+            <p>We are a team of dedicated business consultants with a track record of success in multiple industries. Whether you're streamlining production in manufacturing, optimizing supply chains in wholesale, enhancing customer experiences in retail, or navigating regulatory complexities in healthcare, we have the expertise to guide you.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Deep Industry Insights</h3>
+                    <p>Leveraging years of experience across sectors</p>
+                </div>
+                <div class="service-card">
+                    <h3>Collaborative Partnerships</h3>
+                    <p>Working together to achieve your goals</p>
+                </div>
+                <div class="service-card">
+                    <h3>Data-Driven Strategies</h3>
+                    <p>Making decisions based on solid analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Consulting Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Manufacturing</h3>
+                    <ul>
+                        <li>Process optimization</li>
+                        <li>Lean manufacturing strategies</li>
+                        <li>Technology integration</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Wholesale</h3>
+                    <ul>
+                        <li>Supply chain management</li>
+                        <li>Vendor negotiations</li>
+                        <li>Inventory control</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Retail</h3>
+                    <ul>
+                        <li>Customer experience design</li>
+                        <li>Omni-channel strategies</li>
+                        <li>Sales optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Healthcare</h3>
+                    <ul>
+                        <li>Compliance and regulation guidance</li>
+                        <li>Workflow efficiency</li>
+                        <li>Patient-centered improvements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p>"Our manufacturing plant saw a 20% efficiency boost within six months thanks to their strategies."</p>
+                    <strong>- John D., Plant Manager</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"They helped us streamline our supply chain, saving us thousands annually."</p>
+                    <strong>- Sarah K., Wholesale Director</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Retail sales surged by 35% after implementing their customer experience recommendations."</p>
+                    <strong>- Maria L., Retail Owner</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Start Transforming Your Business Today</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Business Excellence Consulting</h3>
+                <p>📞 Phone: (555) 123-4567</p>
+                <p>📧 Email: contact@businessexcellence.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
